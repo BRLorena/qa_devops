@@ -1,0 +1,12 @@
+Docker commands
+
+docker images - ver imagens que eu possuo
+docker pull nome_img - download imagem
+docker rmi nome_img - remover imagem
+docker run nome_img - executar a imagem
+docker ps - ver os cointainer running
+docker ps -a - posso verificar o historico
+docker rm nome_img - remover um container 
+docker rm xxx - remover pelo dockerId (3 primeiros)
+docker stop nome_img - parar um container
+docker start nome_img - volta a rodar

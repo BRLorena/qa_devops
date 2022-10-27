@@ -1,0 +1,12 @@
+executar app/server
+
+Tomcat:
+C:\Users\bruno\dev\devops\apache-tomcat-8.5.50\bin\startup.bat
+
+localhost:8001 - servidor TomCat
+
+Manager App:
+Configurar usuario: conf/tomcat-users.xml
+
+ex após config. o xml:
+<user username="admin" password="admin" roles="manager-gui,manager-script,manager-jmx,manager-status"/>
