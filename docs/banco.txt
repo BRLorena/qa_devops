@@ -1,12 +1,28 @@
-Docker commands
+Deploy Banco - Postgress
 
-docker images - ver imagens que eu possuo
-docker pull nome_img - download imagem
-docker rmi nome_img - remover imagem
-docker run nome_img - executar a imagem
-docker ps - ver os cointainer running
-docker ps -a - posso verificar o historico
-docker rm nome_img - remover um container 
-docker rm xxx - remover pelo dockerId (3 primeiros)
-docker stop nome_img - parar um container
-docker start nome_img - volta a rodar
+Download via docker image
+https://hub.docker.com/_/postgres
+
+
+Cmd docker para a database:
+
+docker run --name pg-tasks -e POSTGRES_DB=tasks -e POSTGRES_PASSWORD=password -p 5433:5432 postgres:9.6
+docker ps - posso ver o banco no ar
+docker start 5dc
+docker stop 5dc
+
+docker-compose.yml
+
+version: "3"
+
+services:
+  pg-tasks:
+    container_name: pg-tasks
+    image: postgres:9.6
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_DB=tasks
+      - POSTGRES_PASSWORD=password
+
+docker-compose up - sobe todos os serviços que estão na raiz do projeto

@@ -1,0 +1,14 @@
+Fazer um Fork https://github.com/BRLorena/tasks-backend.git
+
+Move P/ a pasta do projeto: cd tasks-backend
+Fazer um package: mvn package
+** Se o erro missing artifact org.hibernate-validator.jar:5.1.3 aparecer, deve entrar no POM e fazer um build
+Mover para pasta target P visualizar o arq .war: cd target
+
+No Tomcat manager: 
+- Select WAR file to upload, devemos selecionar o arquivo WAR gerado e deploy
+
+visualizar erros no Tomcat 
+- Na raiz do tomcat pasta logs, os problemas estão no arq. catalina_date
+
+backend: http://localhost:8001/tasks-backend/

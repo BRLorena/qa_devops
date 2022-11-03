@@ -1,0 +1,8 @@
+Fazer um Fork: https://github.com/wcaquino/tasks-frontend
+
+git clone https://github.com/BRLorena/tasks-frontend.git
+
+build: Mover P/ tasks-frontend e  mvn package
+Mover P/ target e fazer o deploy do frontend: cd target e subir o arq. WAR
+
+frontend: http://localhost:8001/tasks/

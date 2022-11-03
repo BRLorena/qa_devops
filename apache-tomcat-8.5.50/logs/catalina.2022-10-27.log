@@ -39,3 +39,10 @@
 27-Oct-2022 21:38:25.486 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
 27-Oct-2022 21:38:25.492 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1127 ms
 27-Oct-2022 21:47:25.700 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/C:/Users/bruno/dev/devops/apache-tomcat-8.5.50/conf/tomcat-users.xml]
+27-Oct-2022 22:35:21.253 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+27-Oct-2022 22:35:21.615 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+27-Oct-2022 22:35:21.936 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Oct-2022 22:35:22.046 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+27-Oct-2022 22:35:22.055 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+27-Oct-2022 22:35:22.112 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+27-Oct-2022 22:35:22.115 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

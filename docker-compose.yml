@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 
 services:
   pg-tasks:
@@ -6,6 +6,6 @@ services:
     image: postgres:9.6
     ports:
       - 5433:5432
-    enviroment:
+    environment:
       - POSTGRES_DB=tasks
       - POSTGRES_PASSWORD=password
